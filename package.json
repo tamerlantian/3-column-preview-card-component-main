@@ -1,0 +1,31 @@
+{
+  "name": "3-column-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamerlantian/3-column-preview-card-component-main.git"
+  },
+  "author": "sebastian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamerlantian/3-column-preview-card-component-main/issues"
+  },
+  "homepage": "https://github.com/tamerlantian/3-column-preview-card-component-main#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

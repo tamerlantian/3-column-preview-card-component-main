@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$pmy-orange: hsl(31, 76%, 55%);
+$pmy-darkcyan: hsl(184, 100%, 22%);
+$pmy-very-darkcyan: hsl(179, 100%, 13%);
+// paragraphs
+$ntl-trans-white: hsla(0, 0%, 100%, 0.75);
+// background, headings, buttons
+$ntl-very-light-grey: hsl(0, 0%, 95%);
+$ff-primary: 'Lexend Deca', sans-serif;
+$ff-secondary: 'Big Shoulders Display', cursive;
+
+html {
+    font-size: 62.5%;
+    font-family: $ff-primary;
+}
+
+.container {
+    min-width: 375px;
+    margin: 5em 0;
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; 
+}
+
+.card {
+    padding: 4em;
+    width: 300px;
+    
+    &:first-child {
+        border-radius: 8px 8px 0 0;
+    }
+
+    &:last-child {
+        border-radius: 0 0 8px 8px;
+    }
+    
+    &__icon{
+        width: 50px;
+    }
+
+    &__title {
+        color: $ntl-very-light-grey;
+        font-family: $ff-secondary;
+        font-size: 3.2rem;
+        margin-top: 1em;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $ntl-trans-white;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-top: 1.5em;
+        inline-size: 220px;
+    }
+
+    &__button {
+        background-color: $ntl-very-light-grey;
+        border-radius: 25px;
+        font-size: 1.25rem;
+        font-family: $ff-primary;
+        margin-top:1.5em;
+        padding: .8em 1em;
+        width: 10em;
+
+        &--orange {
+            color: $pmy-orange;
+        }
+
+        &--darkcyan {
+            color: $pmy-darkcyan;
+        }
+    
+        &--verydarkcyan {
+            color: $pmy-very-darkcyan;
+        }
+    }
+
+    &--orange {
+        background-color: $pmy-orange;
+    }
+
+    &--darkcyan {
+        background-color: $pmy-darkcyan;
+    }
+
+    &--verydarkcyan {
+        background-color: $pmy-very-darkcyan;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        width: 270px;
+
+        &:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+        
+        &:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+
+        &__text {
+            inline-size: 193px;
+        }
+
+        &__button {
+            margin-top: 5em;
+        }
+    }
+}

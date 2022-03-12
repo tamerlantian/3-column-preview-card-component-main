@@ -46,6 +46,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+So first I do `git init` for initialazin the git repositroy, 
+
+
+
+
 ### Built with
 
 - Semantic HTML5 markup
