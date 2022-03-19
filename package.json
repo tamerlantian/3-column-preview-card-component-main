@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "lite": "lite-server",
     "build-css": "./bin/build-css",
-    "watch-css": "./bin/watch-css"
+    "watch-css": "./bin/watch-css",
+    "watch:all": "parallelshell -v 'npm run lite' 'npm run watch-css'"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
   "devDependencies": {
     "lite-server": "^2.6.1",
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^5.1.3"
