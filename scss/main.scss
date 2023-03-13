@@ -13,11 +13,12 @@ $ff-secondary: 'Big Shoulders Display', cursive;
 html {
     font-size: 62.5%;
     font-family: $ff-primary;
+    height: 100vh;
 }
 
 .container {
     min-width: 375px;
-    margin: 5em 0;
+    margin: 5em auto;
     // min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
     // min-height: 100vh; 
 }
