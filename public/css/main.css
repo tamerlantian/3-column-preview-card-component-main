@@ -6,11 +6,15 @@ html {
 
 .container {
   min-width: 375px;
-  margin: 5em auto; }
+  margin: 5em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .card {
   padding: 4em;
-  width: 300px; }
+  max-width: 15rem; }
   .card:first-child {
     border-radius: 8px 8px 0 0; }
   .card:nth-child(2) {
@@ -38,7 +42,8 @@ html {
     font-family: "Lexend Deca", sans-serif;
     margin-top: 1.5em;
     padding: .8em 1em;
-    width: 10em; }
+    width: 10em;
+    border: none; }
     .card__button--orange {
       color: #e38f35; }
     .card__button--darkcyan {
@@ -60,7 +65,7 @@ html {
     transform: translate(-50%, -50%);
     flex-direction: row; }
   .card {
-    width: 270px; }
+    max-width: 270px; }
     .card:first-child {
       border-radius: 8px 0 0 8px; }
     .card:nth-child(2) {

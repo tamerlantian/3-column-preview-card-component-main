@@ -19,13 +19,15 @@ html {
 .container {
     min-width: 375px;
     margin: 5em auto;
-    // min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    // min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     padding: 4em;
-    width: 300px;
+    max-width: 15rem;
     
     &:first-child {
         border-radius: 8px 8px 0 0;
@@ -67,6 +69,7 @@ html {
         margin-top:1.5em;
         padding: .8em 1em;
         width: 10em;
+        border: none;
 
         &--orange {
             color: $pmy-orange;
@@ -104,7 +107,7 @@ html {
     }
 
     .card {
-        width: 270px;
+        max-width: 270px;
 
         &:first-child {
             border-radius: 8px 0 0 8px;
